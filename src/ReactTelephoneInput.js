@@ -1,8 +1,6 @@
-'use strict';
-
 // TODO - fix the onlyContries props. Currently expects that as an array of country object, but users should be able to send in array of country isos
 
-var some = require('lodash/some');
+var some = require('lodash/some')
 var find = require('lodash/find');
 var reduce = require('lodash/reduce');
 var map = require('lodash/map');
@@ -364,7 +362,7 @@ export var ReactTelephoneInput = createReactClass({
     handleInputFocus() {
         // trigger parent component's onFocus handler
         if(typeof this.props.onFocus === 'function') {
-            this.props.onFocus(this.state.formattedNumer, this.state.selectedCountry);
+            this.props.onFocus(this.state.formattedNumber, this.state.selectedCountry);
         }
 
         this._fillDialCode();

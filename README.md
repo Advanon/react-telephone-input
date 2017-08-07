@@ -59,6 +59,12 @@ If you don't want all countries to be shown in the dropdown list, you can pass a
 #### preferredCountries
 Preferred countries show up in the top of the list. This prop also accepts an array of country iso2 names.
 
+E.g.
+```
+<ReactTelephoneInput
+  preferredCountries={['in', 'us', 'uk']}
+  />
+```
 #### classNames
 You can send in additional classes to be applied to the top container div of the component.
 
@@ -118,5 +124,5 @@ You can try the app by downloading everything and running the commands given bel
 $ npm install
 $ npm start
 
-go to your browser and type `http://localhost:8000`
+go to your browser and type `http://localhost:3000`
 ```
