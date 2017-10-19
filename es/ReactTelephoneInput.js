@@ -22,7 +22,7 @@ var createReactClass = require('create-react-class');
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var onClickOutside = require('react-onclickoutside');
+var onClickOutside = require('react-onclickoutside').default;
 var classNames = require('classnames');
 var countryData = require('country-telephone-data');
 var allCountries = countryData.allCountries;
