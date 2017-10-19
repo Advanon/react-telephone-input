@@ -20,7 +20,7 @@ var createReactClass = require('create-react-class');
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var onClickOutside = require('react-onclickoutside');
+var onClickOutside = require('react-onclickoutside').default;
 var classNames = require('classnames');
 var countryData = require('country-telephone-data')
 var allCountries = countryData.allCountries;
@@ -90,7 +90,7 @@ export var ReactTelephoneInput = createReactClass({
         disabled: PropTypes.bool,
         pattern: PropTypes.string,
         required: PropTypes.bool,
-        name: PropTypes.string,        
+        name: PropTypes.string,
     },
     getDefaultProps() {
         return {
@@ -105,7 +105,7 @@ export var ReactTelephoneInput = createReactClass({
             placeholder: '+1 (702) 123-4567',
             autoComplete: 'tel',
             required: false,
-            name: 'telephone',            
+            name: 'telephone',
         };
     },
     getNumber() {
